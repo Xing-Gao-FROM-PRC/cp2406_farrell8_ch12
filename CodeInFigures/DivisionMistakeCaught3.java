@@ -1,12 +1,9 @@
 import java.util.*;
-public class DivisionMistakeCaught3
-{
-   public static void main(String[] args)
-   {
+public class DivisionMistakeCaught3{
+   public static void main(String[] args){
       Scanner input = new Scanner(System.in);
       int numerator, denominator, result;
-      try
-      {
+      try{
          System.out.print("Enter numerator >> ");
          numerator = input.nextInt();
          System.out.print("Enter denominator >> ");
@@ -15,12 +12,10 @@ public class DivisionMistakeCaught3
          System.out.println(numerator + " / " + denominator + 
             " = " + result);
       }
-      catch(ArithmeticException mistake)
-      {
+      catch(ArithmeticException mistake){
          System.out.println(mistake.getMessage());
       }
-      catch(InputMismatchException mistake)
-      {
+      catch(InputMismatchException mistake){
          System.out.println("Wrong data type");
       }
       System.out.println("End of program");

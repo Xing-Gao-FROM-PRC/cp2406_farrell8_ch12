@@ -1,20 +1,15 @@
 import java.util.Scanner;
-public class EnteringIntegers
-{
-   public static void main(String[] args)
-   {
+public class EnteringIntegers{
+   public static void main(String[] args){
       int[] numberList = {0, 0, 0, 0, 0, 0};
       int x;
       Scanner input = new Scanner(System.in);
-      for(x = 0; x < numberList.length; ++x)
-      {
-         try
-         {
+      for(x = 0; x < numberList.length; ++x){
+         try{
             System.out.print("Enter an integer >> ");
             numberList[x] = input.nextInt();
          }
-         catch(Exception e)
-         {
+         catch(Exception e){
             System.out.println("Exception occurred");
          }
          // input.nextLine();  

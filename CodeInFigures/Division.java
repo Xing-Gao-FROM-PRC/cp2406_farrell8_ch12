@@ -1,8 +1,6 @@
 import java.util.Scanner;
-public class Division
-{
-   public static void main(String[] args)
-   {
+public class Division{
+   public static void main(String[] args){
       Scanner input = new Scanner(System.in);
       int numerator, denominator, result;
       System.out.print("Enter numerator >> ");

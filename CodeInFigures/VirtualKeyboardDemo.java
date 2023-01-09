@@ -1,16 +1,12 @@
 import java.util.Scanner;
 import java.io.IOException;
-public class VirtualKeyboardDemo
-{
-    public static void main(String[] args)
-    {
+public class VirtualKeyboardDemo{
+    public static void main(String[] args){
        Scanner input = new Scanner(System.in);
-       try
-       {
+       try{
            Process proc = Runtime.getRuntime().exec("cmd /c C:\\Windows\\System32\\osk.exe");
        }
-       catch(IOException e)
-       {
+       catch(IOException e){
           System.out.println(e.getMessage());
        }
        String name;

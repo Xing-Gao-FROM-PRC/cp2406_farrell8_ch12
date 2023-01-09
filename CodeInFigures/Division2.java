@@ -1,8 +1,6 @@
 import java.util.Scanner;
-public class Division2
-{
-   public static void main(String[] args)
-   {
+public class Division2{
+   public static void main(String[] args){
       Scanner input = new Scanner(System.in);
       int numerator, denominator, result;
       System.out.print("Enter numerator >> ");
@@ -11,8 +9,7 @@ public class Division2
       denominator = input.nextInt();
       if(denominator == 0)
         System.out.println("Cannot divide by 0");
-      else
-      {
+      else{
          result = numerator / denominator;
          System.out.println(numerator + " / " + denominator +
             " = " + result);

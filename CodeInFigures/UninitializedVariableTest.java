@@ -1,17 +1,14 @@
 import java.util.Scanner;
-class UninitializedVariableTest
-{
-   static void main(String[] args)
-   {
-      int x;
+
+class UninitializedVariableTest{
+   static void main(String[] args){
+      int x = 0;
       Scanner input = new Scanner(System.in);
-      try
-      {
+      try{
          System.out.print("Enter an integer >> ");
          x = input.nextInt();
       }
-      catch(Exception e)
-      {
+      catch(Exception e){
          System.out.println("Exception occurred");
       }  
       System.out.println("x is " + x); 

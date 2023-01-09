@@ -1,18 +1,14 @@
 import java.util.*;
-public class PriceListApplication1
-{
-   public static void main(String[] args)
-   {
+public class PriceListApplication1{
+   public static void main(String[] args){
       int item;
       Scanner input = new Scanner(System.in);
       System.out.print("Enter item number >> ");
       item = input.nextInt();
-      try
-      {
+      try{
          PriceList.displayPrice(item);
       }
-      catch(IndexOutOfBoundsException e)
-      {
+      catch(IndexOutOfBoundsException e){
          System.out.println("Price is $0");
       }
    }
